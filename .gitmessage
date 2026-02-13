@@ -1,0 +1,17 @@
+# tipo: mensagem curta no imperativo
+#
+# Tipos:
+# feat: nova funcionalidade
+# fix: correção de bug
+# refactor: reorganização de código
+# chore: configuração ou dependências
+# style: formatação, CSS
+# docs: documentação
+#
+# Exemplos:
+# feat: create header component
+# fix: resolve layout overflow
+# refactor: simplify search logic
+# chore: update dependencies
+
+tipo: 
