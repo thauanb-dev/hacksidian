@@ -1,22 +1,24 @@
 import { DraftingCompass } from "lucide-react";
+import Link from "next/link";
+
 
 export default function AppBrand() {
   return (
     <div className="flex text-left  items-center gap-8 font-semibold">
       <div className="gap-2 flex">
         <span className="h-5 w-5 rounded-full bg-violet-500"></span>
-        <a className="hover:text-cyan-300" href="">
+        <Link className="hover:text-cyan-300" href="/">
           Hacksidian
-        </a>
+        </Link>
       </div>
       <div className="gap-2 flex">
-        <a className="hover:text-cyan-300" href="">
           <div className="gap-2 flex">
+            <Link className="hover:text-cyan-300" href="/tools/utm">
             <DraftingCompass />
             UTM
-          </div>
-        </a>
+            </Link>
+      </div>
       </div>
     </div>
-  );
+  )
 }
