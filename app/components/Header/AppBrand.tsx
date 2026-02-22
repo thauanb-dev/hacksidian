@@ -11,14 +11,17 @@ export default function AppBrand() {
           Hacksidian
         </Link>
       </div>
-      <div className="gap-2 flex">
-          <div className="gap-2 flex">
-            <Link className="hover:text-cyan-300" href="/tools/utm">
+      <div className="gap-2">
+        <div className="">
+          <Link
+            className="hover:text-cyan-300 flex items-center gap-1"
+            href="/tools/utm"
+          >
             <DraftingCompass />
             UTM
-            </Link>
-      </div>
+          </Link>
+        </div>
       </div>
     </div>
-  )
+  );
 }
