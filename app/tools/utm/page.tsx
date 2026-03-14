@@ -1,19 +1,17 @@
-import Header from "@/app/components/Header/Header"
-import Body from "@/app/components/Body/Body"
-import UtmConverter from "@/app/components/UTM/UtmConverter"
+import PageHeader from "@/app/components/PageHeader/PageHeader";
+import UtmConverter from "@/app/components/UTM/UtmConverter";
 
-export default function Utm(){
-return (
-    <div>
-        <Header/>
-        <Body>
-      <div className="flex flex-col gap-4">
-          <h1>
-            <b>Converter Coordenadas</b>
-          </h1>
-          <UtmConverter />
-        </div>
-        </Body>
+export default function Utm() {
+  return (
+    <div className="mx-auto max-w-225">
+      <PageHeader
+        icon="📐"
+        title="UTM Converter"
+        description="Converta entre coordenadas UTM e geográficas (Lat/Lon) usando SIRGAS2000."
+      />
+      <div className="px-15">
+        <UtmConverter />
+      </div>
     </div>
-)
+  );
 }
